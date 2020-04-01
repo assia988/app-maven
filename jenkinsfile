@@ -5,19 +5,18 @@ pipeline{
   		 jdk 'JDK'
   		 }
   		 stages{
-  		 	stage('build'){
+  		 	   stage('build'){
   		 					steps{
   		 					bat 'mvn compiler:compile'
   		 					}
   		 					post{
   		 		success {
   		 			bat "echo 'Projet compilé avec succès'"
-
   		 		}
   		 		failure {
   		 			bat "echo 'Erreur lors de la compilation de projet '"
   		 		}
-  		 					}
+  		 		}
   		 	}
   		 		stage('Test'){
   		 	steps {
