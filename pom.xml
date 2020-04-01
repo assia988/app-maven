@@ -77,7 +77,7 @@
 	  <repositories>
 	    <repository>
 		    <id>deployment</id>
-		    <url>http://localhost:8081/repository/maven-releases//content/repositories/maven-releases</url>
+		    <url>http://localhost:8081/repository/sample-rel/</url>
 	    </repository>
 	  </repositories>
 	</profile>
